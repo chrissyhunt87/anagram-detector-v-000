@@ -7,7 +7,7 @@ class Anagram
 
   def match(possible_anagrams)
     sorted_word_array = @word.split().sort
-    possible_anagrams.split().select {|a| a.split().sort == sorted_word_array}
+    possible_anagrams.select {|a| a.split().sort == sorted_word_array}
   end
 
 end
