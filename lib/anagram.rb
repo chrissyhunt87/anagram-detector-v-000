@@ -3,6 +3,7 @@ class Anagram
 
   def initialize(word)
     @word = word
+    @sorted_word_array = word.split().sort
   end
 
   def match(possible_anagrams)
